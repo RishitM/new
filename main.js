@@ -5,7 +5,7 @@ var video
 function preload(){
 }
 function setup(){
-canvas=createCanvas(200,300)
+canvas=createCanvas(380,380)
 canvas.center();
 video=createCapture(VIDEO)
 video.hide()
@@ -14,7 +14,7 @@ document.getElementById("status").innerHTML="Detecting Objects..."
 
 }
 function draw(){
-image(video,0,0,200,300)
+image(video,0,0,380,380)
 
 
 if(status=true){
