@@ -5,8 +5,8 @@ var video
 function preload(){
 }
 function setup(){
-canvas=createCanvas(700,500);
-canvas.position(400,200);
+canvas=createCanvas(200,300)
+canvas.center();
 video=createCapture(VIDEO)
 video.hide()
 object_detector=ml5.objectDetector("cocossd",ModelLoaded);
@@ -14,7 +14,7 @@ document.getElementById("status").innerHTML="Detecting Objects..."
 
 }
 function draw(){
-image(video,0,0,700,500)
+image(video,0,0,200,300)
 
 
 if(status=true){
